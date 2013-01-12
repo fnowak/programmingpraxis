@@ -56,7 +56,7 @@
 
 (defun countdown (ops nums year)
   (loop
-     for tuple in (tuples ops (1- (length numbers)))
+     for tuple in (tuples ops (1- (length nums)))
      nconc
        (let* ((combination (combine tuple nums))
 	      (result (handler-case (eval combination)
